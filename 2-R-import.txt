@@ -1,0 +1,3 @@
+# Create the entry field
+entry = tk.Entry(window, width=30)
+entry.grid(row=0, column=0, columnspan=4
