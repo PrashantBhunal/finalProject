@@ -1,0 +1,13 @@
+# Create the operator buttons
+operators = ['+', '-', '', '/','*',]
+for i, operator in enumerate(operators):
+    button = tk.Button(window, text=operator, width=5, command=lambda operator=operator: append_char(operator))
+    button.grid(row=i+1, column=3)
+button_clear = tk.Button(window, text='C', width=5, command=clear)
+button_clear.grid(row=4, column=0)
+button_zero = tk.Button(window, text='0', width=5, command=lambda: append_char('0'))
+button_zero.grid(row=4, column=1)
+button_equal = tk.Button(window, text='=', width=5, command=evaluate)
+button_equal.grid(row=4, column=2)
+button_decimal = tk.Button(window, text='.', width=5, command=lambda: append_char('.'))
+button_decimal.grid(row=5, column=1)
