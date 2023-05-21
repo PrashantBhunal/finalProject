@@ -1,0 +1,3 @@
+# Function to append characters to the entry field
+def append_char(char):
+    entry.insert(tk.END, char)
