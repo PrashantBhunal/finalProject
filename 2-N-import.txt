@@ -1,0 +1,4 @@
+# Create the number buttons
+for i in range(9):
+    button = tk.Button(window, text=str(i+1), width=5, command=lambda i=i: append_char(str(i+1)))
+    button.grid(row=(i//3)+1, column=i%3)
