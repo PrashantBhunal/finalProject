@@ -1,0 +1,5 @@
+# Function to clear the entry field
+def clear():
+    entry.delete(0, tk.END)
+window = tk.Tk()
+window.title("Calculator")
